@@ -1,6 +1,6 @@
 import React from 'react';
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
-import RootLayout from './Components/Layout/RootLayout';
+import RootLayout from './Components/Layout/Rootlayout';
 import Feature from './Components/Pages/Feature';
 import Register from './Components/Pages/Register';
 import Home from './Components/Pages/Home';
