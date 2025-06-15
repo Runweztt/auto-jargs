@@ -1,0 +1,559 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+.hero-container {
+  position: relative;
+  height: 80vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../assets/Auto1.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px);
+  z-index: 0;
+}
+
+.hero {
+  position: relative;
+  z-index: 1;
+  color: white;
+  padding: 2rem;
+}
+
+
+.hero span {
+  border: 0 solid transparent;       
+  border-radius: 0;                  
+  margin: 4px;
+  padding: 4px;
+  display: inline-block;
+  transition: border 0.4s ease, border-radius 0.4s ease;
+    font-size: 65px;
+
+}
+
+.hero span:hover {
+  border: 5px solid #667eea;         
+  border-radius: 12px;               
+}
+
+.button1{
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: black;
+    background-color: #667eea;
+     border: 0 solid transparent; 
+    border-radius: 5px;
+}
+.button1:hover{
+    color: white;
+    background-color: black;
+    border: 5px solid #667eea;         
+    border-radius: 12px; 
+
+}
+
+
+.hero p{
+
+
+    margin: 1.1rem;
+    font-size: 20px;
+
+}
+
+.logo-carousel {
+  padding: 2rem;
+  background-color: white;
+}
+
+.carousel-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.carousel-item img {
+  width: 120px;
+  height: auto;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  transition: transform 0.6s ease-in-out;
+}
+
+.carousel-item p {
+  font-size: 0.95rem;
+  max-width: 250px;
+  color: #333;
+}
+
+.carousel-item:hover img {
+  transform: scale(1.05);
+}
+
+.Container1{
+
+      display: flex;
+      justify-content: center;
+       background: linear-gradient(135deg, #667eea 0%, #d3d0d5 100%);
+
+}
+
+.main1{
+  height: 50vh;
+  width: 50%;
+  margin: 1rem;
+  padding: 2rem;
+  gap: 1px;
+  border: 0 solid transparent;
+  border-radius: 5px;
+ 
+}
+
+
+.main1 h2{
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 24px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  
+
+}
+
+.main1 p{
+ border-left: 5px solid #764ba2;
+  padding: 1rem 1.5rem;
+  margin: 1rem 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  color: #333;
+}
+.btn{
+  align-items: center;
+  
+}
+.main1 img{
+   width: 100%;
+  height: 310px;
+  object-fit: cover;
+ 
+}
+
+
+.Container2{
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color:  #667eea;
+}
+
+
+.content{
+   display: flex;
+  align-items: flex-start; 
+  justify-content: center;
+  max-width: 1400px;
+  width: 100%;
+  margin: auto;
+  box-sizing: border-box;
+  
+ 
+}
+
+
+.content-image{
+  width: 50%;
+  padding: 1rem;
+  margin: 1rem;
+  
+}
+
+.content-image img {
+    width: 80%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin: 6rem;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  
+
+}
+
+.content-text {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  box-sizing: border-box;
+  text-align: center;
+  
+}
+.content-text h1{
+  text-align: center;
+   margin: 1rem;
+   padding: 1rem;
+   font-size: 60px;
+   font-weight: 200;
+}
+
+.content-text div {
+  margin-bottom: 1rem;
+  
+}
+
+.content-text span {
+  font-weight: bold;
+  border: 3px solid  transparent;
+  padding: 5px;
+  margin: 10px;
+  font-size: 25px;
+  border-radius: 7px;
+  
+}
+
+.content-text span:hover{
+  border: 1px solid #667eea;         /* Border appears on hover */
+    border-radius: 12px; 
+
+
+}
+.content-text p{
+   /* soft background */
+  border-left: 5px solid #764ba2; /* accent line */
+  padding: 1rem 1.5rem;
+  margin: 1rem 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  color: #333;
+}
+.service-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.service-grid :hover {
+  border-radius: 12px;
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
+
+
+
+
+
+.container3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  color: white;
+  flex-direction: column;
+  height: 180vh;
+  transition: background-color 0.3s ease;
+}
+.product {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  margin: 2rem auto;
+  padding: 2rem;
+  gap: 2rem;
+  align-items: flex-start;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  
+}
+.product:hover {
+  border-radius: 12px;
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
+
+
+.prod-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1.5rem;
+  
+  padding: 1rem;
+}
+
+.prod-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+  color: gray;
+  margin: 1rem;
+}
+
+.prod-content img {
+  width: 400px;
+  height: auto;
+}
+
+.product h2 {
+  
+  color: black;
+  padding: 0.5rem;
+  border: 1px solid transparent;
+  border-radius: 12px;
+}
+  
+
+.product h2:hover{
+  border: 1px solid #667eea;         
+    border-radius: 12px; 
+
+}
+.button2{
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: black;
+    background-color: #667eea;
+    border-radius: 5px;
+    width: 50%;
+}
+.button2:hover{
+    color: white;
+    background-color: black;
+    border: 5px solid #667eea;         
+    border-radius: 12px; 
+
+}
+
+
+
+@media (max-width: 768px) {
+  .container {
+    height: auto;
+    padding: 2rem 1rem;
+    background-position: center;
+    flex-direction: column;
+  }
+
+  .hero {
+    font-size: 18px;
+    padding: 2rem 1rem;
+    margin: 2rem 0;
+    text-align: center;
+  }
+
+  .hero h1 span {
+    font-size: 35px;
+  }
+
+  .button1 {
+    padding: 0.7rem 1rem;
+    font-size: 1rem;
+  }
+
+  .logo-carousel {
+    padding: 1rem;
+  }
+
+  .carousel-item img {
+    width: 80px;
+    margin-bottom: 0.5rem;
+  }
+
+  .carousel-item p {
+    font-size: 0.8rem;
+  }
+
+  .Container1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main1 {
+    width: 90%;
+    height: auto;
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+
+  .main1 img {
+    height: 220px;
+  }
+
+  .content {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .content-image,
+  .content-text {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .content-image img {
+    width: 100%;
+    margin: 1rem auto;
+    padding: 0;
+  }
+
+  .content-text h1 {
+    font-size: 32px;
+    padding: 0.5rem;
+  }
+
+  .content-text span {
+    font-size: 18px;
+  }
+
+  .content-text p {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+
+    .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+.service-grid div {
+  margin-bottom: 1rem;
+}
+
+.content-text span {
+  font-weight: bold;
+  border: 3px solid transparent;
+  padding: 5px;
+  margin: 10px;
+  font-size: 25px;
+  border-radius: 7px;
+}
+
+.content-text span:hover {
+  border: 1px solid #667eea;
+  border-radius: 12px;
+}
+
+.content-text p {
+  
+  border-left: 5px solid #764ba2;
+  padding: 1rem 1.5rem;
+  margin: 1rem 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  color: #333;
+
+  
+}
+
+@media (max-width: 768px) {
+  .container3 {
+    height: auto; 
+    padding: 2rem 1rem;
+  }
+
+  .product {
+    flex-direction: column; 
+    width: 95%;
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+
+  .prod-content {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .prod-content img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .prod-text {
+    margin: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .product h2 {
+    text-align: center;
+    padding: 0.5rem 0;
+  }
+}
+
+
+
+@media (max-width: 480px) {
+  .hero {
+    font-size: 16px;
+    margin: 1rem;
+  }
+
+  .hero span {
+    font-size: 16px;
+  }
+
+  .button1 {
+    font-size: 0.9rem;
+  }
+
+  .main1 h2 {
+    font-size: 22px;
+  }
+
+  .content-text h1 {
+    font-size: 24px;
+  }
+
+  .content-text span {
+    font-size: 16px;
+  }
+
+  .content-text p {
+    font-size: 0.95rem;
+  }
+
+  .carousel-item img {
+    width: 60px;
+  }
+
+  .carousel-item p {
+    font-size: 0.75rem;
+  }
+}
