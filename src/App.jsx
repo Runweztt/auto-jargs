@@ -15,9 +15,9 @@ function App() {
         <Route path='Register' element={<Register />} />
       </Route>
     ),
-    {
-      basename: '/auto-jargs', 
-    }
+    // {
+    //   basename: '/auto-jargs', 
+    // }
   );
 
   return (
