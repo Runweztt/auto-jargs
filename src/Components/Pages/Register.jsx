@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './Login.css'
 import { FcGoogle } from "react-icons/fc";
 import { createUserWithEmailAndPassword, signInWithPopup, GoogleAuthProvider } from 'firebase/auth';
-import { auth } from '../../Firebase-config';
+import { auth } from '../../firebase-config';
 
 function Register() {
   const [registerEmail, setRegisterEmail] = useState("");
