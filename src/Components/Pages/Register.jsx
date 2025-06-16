@@ -3,10 +3,14 @@ import './Login.css'
 import { FcGoogle } from "react-icons/fc";
 import { createUserWithEmailAndPassword, signInWithPopup, GoogleAuthProvider } from 'firebase/auth';
 import { auth } from '../../firebase-config';
+import { useNavigate } from 'react-router-dom';
+
 
 function Register() {
   const [registerEmail, setRegisterEmail] = useState("");
   const [registerPassword, setRegisterPassword] = useState("");
+
+  const navigate = useNavigate()
 
   const register = async (e) => {
     e.preventDefault(); 
@@ -18,6 +22,7 @@ function Register() {
         registerPassword
       );
       console.log(userCredential.user);
+      navigate('/Feature')
     } catch (error) {
       console.error("Registration error:", error.message);
     }
@@ -28,6 +33,8 @@ function Register() {
     try {
       const result = await signInWithPopup(auth, provider);
       console.log("Google sign-in user:", result.user);
+
+      navigate('/Feature')
     } catch (error) {
       console.error("Google sign-in error:", error.message);
     }
