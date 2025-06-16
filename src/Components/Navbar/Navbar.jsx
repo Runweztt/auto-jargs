@@ -27,8 +27,7 @@ function Navbar() {
           {/* Desktop Navigation */}
           <ul className="desktop-nav">
             <li><NavLink to="/">Home</NavLink></li>
-            <li><NavLink to="/About">About</NavLink></li>
-            <li><NavLink to="/Contact">Contact</NavLink></li>
+            
             <li><NavLink to="/Feature">Feature</NavLink></li>
           </ul>
 
@@ -55,7 +54,7 @@ function Navbar() {
         <ul>
           <li><NavLink to="/" onClick={closeNav}>Home</NavLink></li>
           <li><NavLink to="/About" onClick={closeNav}>About</NavLink></li>
-          <li><NavLink to="/Contact" onClick={closeNav}>Contact</NavLink></li>
+          
           <li><NavLink to="/Feature" onClick={closeNav}>Feature</NavLink></li>
         </ul>
 
