@@ -53,8 +53,6 @@ function Navbar() {
         
         <ul>
           <li><NavLink to="/" onClick={closeNav}>Home</NavLink></li>
-          <li><NavLink to="/About" onClick={closeNav}>About</NavLink></li>
-          
           <li><NavLink to="/Feature" onClick={closeNav}>Feature</NavLink></li>
         </ul>
 
